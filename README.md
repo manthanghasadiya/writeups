@@ -7,7 +7,6 @@ Collection of vulnerability disclosures and security research by [Manthan Ghasad
 | CVE | Product | Severity | Description |
 |-----|---------|----------|-------------|
 | [CVE-2026-6942](./CVE-2026-6942/) | radare2-mcp | 9.8 Critical | RCE via shell metacharacter injection |
-| [CVE-2026-35394](./CVE-2026-35394/) | mobile-mcp | 8.3 High | URL scheme injection |
 
 ## Tools
 

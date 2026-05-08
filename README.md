@@ -26,10 +26,10 @@ MCP (Model Context Protocol) is Anthropic's open standard for connecting AI agen
 
 **Key findings from my research:**
 
-- 🔴 **Trust boundary violations** — MCP servers often trust client input without validation
-- 🔴 **Prompt injection via tools** — Malicious content in files/data can manipulate AI behavior  
-- 🔴 **Missing input sanitization** — Shell escapes, path traversals, and SSRF are common
-- 🔴 **SDK-level vulnerabilities** — Bugs in official SDKs affect all downstream servers
+- 🔴 **Trust boundary violations** - MCP servers often trust client input without validation
+- 🔴 **Prompt injection via tools** - Malicious content in files/data can manipulate AI behavior  
+- 🔴 **Missing input sanitization** - Shell escapes, path traversals, and SSRF are common
+- 🔴 **SDK-level vulnerabilities** - Bugs in official SDKs affect all downstream servers
 
 ---
 
@@ -75,9 +75,9 @@ writeups/
 
 I follow coordinated disclosure practices:
 
-1. **Report** — Contact maintainer via security advisory or private channel
-2. **Collaborate** — Work with maintainer on fix and timeline
-3. **Publish** — Release writeup after patch is available
+1. **Report** - Contact maintainer via security advisory or private channel
+2. **Collaborate** - Work with maintainer on fix and timeline
+3. **Publish** - Release writeup after patch is available
 
 All vulnerabilities listed here have been patched. Please update to the latest versions.
 

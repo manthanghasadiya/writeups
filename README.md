@@ -1,26 +1,25 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/CVEs-3-red?style=for-the-badge" alt="CVEs"/>
-  <img src="https://img.shields.io/badge/Focus-MCP%20Security-blue?style=for-the-badge" alt="Focus"/>
-  <img src="https://img.shields.io/badge/Tool-mcpsec-green?style=for-the-badge" alt="Tool"/>
+  <img src="https://img.shields.io/badge/CVEs-4-red?style=for-the-badge" alt="CVEs"/>
 </p>
 
-# 🔐 Security Research & CVE Writeups
+# Security Research & CVE Writeups
 
 Technical writeups for vulnerabilities I've discovered, primarily in **MCP (Model Context Protocol)** server implementations. Each writeup includes root cause analysis, proof-of-concept code, and remediation guidance.
 
 ---
 
-## 📋 CVE Index
+## CVE Index
 
 | CVE ID | Product | Severity | Type | Status |
 |--------|---------|----------|------|--------|
+| [CVE-2026-47427](./CVE-2026-47427/) | github-mcp-server | ![High](https://img.shields.io/badge/7.5-High-orange) | Nil Pointer Dereference DoS | ✅ Fixed |
 | [CVE-2026-6942](./CVE-2026-6942/) | radare2-mcp | ![Critical](https://img.shields.io/badge/9.8-Critical-red) | RCE via Shell Escape | ✅ Fixed |
 | [CVE-2026-42449](./CVE-2026-42449/) | n8n-mcp | ![High](https://img.shields.io/badge/8.5-High-orange) | SSRF via IPv6 Bypass | ✅ Fixed |
 | [CVE-2026-35394](https://medium.com/@manthan27ghasadiya/cve-2026-35394-pwning-androids-via-ai-prompt-injection-bae9b7ff9654) | mobile-mcp | ![High](https://img.shields.io/badge/8.3-High-orange) | Prompt Injection → Android Intent | ✅ Fixed |
 
 ---
 
-## 🎯 Research Focus: MCP Security
+## Research Focus: MCP Security
 
 MCP (Model Context Protocol) is Anthropic's open standard for connecting AI agents to external tools and data sources. As AI assistants gain access to filesystems, databases, and APIs through MCP servers, the attack surface expands dramatically.
 
@@ -33,7 +32,7 @@ MCP (Model Context Protocol) is Anthropic's open standard for connecting AI agen
 
 ---
 
-## 🛠️ Discovery Tool
+## Discovery Tool
 
 All vulnerabilities in this repo were discovered using **[mcpsec](https://github.com/manthanghasadiya/mcpsec)**, an open-source security scanner I built for MCP server implementations.
 
@@ -53,11 +52,15 @@ mcpsec audit --github https://github.com/org/mcp-server
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 writeups/
 ├── README.md                    # This file
+├── CVE-2026-47427/             # github-mcp-server DoS
+│   ├── README.md               # Full writeup
+│   ├── poc.py                  # Proof of concept
+│   └── images/                 # Screenshots
 ├── CVE-2026-6942/              # radare2-mcp RCE
 │   ├── README.md               # Full writeup
 │   ├── poc.py                  # Proof of concept
@@ -71,7 +74,7 @@ writeups/
 
 ---
 
-## 📬 Responsible Disclosure
+## Responsible Disclosure
 
 I follow coordinated disclosure practices:
 
@@ -83,18 +86,12 @@ All vulnerabilities listed here have been patched. Please update to the latest v
 
 ---
 
-## 🔗 Links
+## Links
 
 - **mcpsec:** [github.com/manthanghasadiya/mcpsec](https://github.com/manthanghasadiya/mcpsec)
 - **LinkedIn:** [man-ghasadiya](https://linkedin.com/in/man-ghasadiya)
-- **Twitter/X:** [@g_m_j_2703](https://twitter.com/g_m_j_2703)
+- **Twitter/X:** [@manthanghasadiya](https://twitter.com/manthanghasadiya)
 - **Medium:** [@manthan27ghasadiya](https://medium.com/@manthan27ghasadiya)
-
----
-
-## 📄 License
-
-All writeups are provided for educational and defensive purposes. Use responsibly.
 
 ---
 

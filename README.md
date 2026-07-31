@@ -90,7 +90,7 @@ All vulnerabilities listed here have been patched. Please update to the latest v
 
 - **mcpsec:** [github.com/manthanghasadiya/mcpsec](https://github.com/manthanghasadiya/mcpsec)
 - **LinkedIn:** [man-ghasadiya](https://linkedin.com/in/man-ghasadiya)
-- **Twitter/X:** [@g_m_j_2703](https://twitter.com/g_m_j_2703)
+- **Twitter/X:** [@g_m_j_2703](https://x.com/g_m_j_2703)
 - **Medium:** [@manthan27ghasadiya](https://medium.com/@manthan27ghasadiya)
 
 ---
